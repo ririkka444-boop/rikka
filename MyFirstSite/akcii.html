@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora — Акции</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .akcii-page {
+            background: linear-gradient(135deg, #d99bb4 0%, #ffffff 100%);
+            min-height: 100vh;
+        }
+        .akcii-container {
+            max-width: 1232px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .akcii-title {
+            text-align: center;
+            font-size: 48px;
+            color: #2c1a24;
+            margin-bottom: 40px;
+        }
+        .akcii-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .akcii-card {
+            background: white;
+            border-radius: 24px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+        .akcii-icon {
+            font-size: 64px;
+        }
+        .akcii-card h3 {
+            font-size: 28px;
+            color: #a44c78;
+            margin: 15px 0 10px;
+        }
+        .akcii-card p {
+            color: #5e4a54;
+            margin-bottom: 20px;
+        }
+        .akcii-btn {
+            background: #d99bb4;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .akcii-btn:hover {
+            background: #a44c78;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px;
+            color: #2c1a24;
+            text-decoration: none;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background: rgba(255,255,255,0.95);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #2c1a24;
+        }
+    </style>
+</head>
+<body class="akcii-page">
+    <div class="header-inner">
+        <a href="index.html" class="logo">🌺 Flora</a>
+        <a href="index.html" class="back-link">← На главную</a>
+    </div>
+
+    <div class="akcii-container">
+        <h1 class="akcii-title">🏷️ Наши акции</h1>
+        <div class="akcii-grid">
+            <div class="akcii-card">
+                <div class="akcii-icon">🎁</div>
+                <h3>Скидка 20% на первый заказ</h3>
+                <p>Для новых клиентов по промокоду FLORA20</p>
+                <button class="akcii-btn" onclick="alert('Промокод FLORA20 скопирован!')">Скопировать промокод</button>
+            </div>
+            <div class="akcii-card">
+                <div class="akcii-icon">🚚</div>
+                <h3>Бесплатная доставка</h3>
+                <p>При заказе от 4000 ₽ — доставка бесплатно</p>
+                <button class="akcii-btn" onclick="alert('Акция действует на все заказы от 4000₽')">Подробнее</button>
+            </div>
+            <div class="akcii-card">
+                <div class="akcii-icon">💐</div>
+                <h3>Букет в подарок</h3>
+                <p>При заказе от 5000 ₽ — монобукет в подарок</p>
+                <button class="akcii-btn" onclick="alert('Акция действует до конца месяца!')">Подробнее</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
